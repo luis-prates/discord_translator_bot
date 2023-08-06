@@ -1,0 +1,15 @@
+[package]
+name = "discord_translator_bot"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+debug = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = "0.11"
+deepl = "0.4"
+tokio = { version = "1", features = ["full"] }
+lingua = { version = "1.4.0", default-features = false, features = ["english", "portuguese"] }
